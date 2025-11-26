@@ -1,13 +1,10 @@
-import NavContainer from "../../components/Nav/NavContainer"
-import { DashboardStyled } from "./Dashboard.styles"
+import { PageStyled, PageTitle } from "../meditation/Meditation.styles"
 
 const Dashboard = () => {
     return (
-        <DashboardStyled>
-            <NavContainer>
-                
-            </NavContainer>
-        </DashboardStyled>
+        <PageStyled>
+            <PageTitle>Dashboard</PageTitle>
+        </PageStyled>
     )
 }
 

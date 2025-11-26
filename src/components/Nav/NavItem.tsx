@@ -1,8 +1,19 @@
+import { Link } from "react-router"
 import { NavItemStyled } from "./Nav.styles"
 
-const NavItem = () => {
+interface NavItemProps {
+    to: string;
+    label: string;
+    isExpanded: boolean;
+}
+
+const NavItem = ({ to, label, isExpanded }: NavItemProps) => {
     return (
-        <NavItemStyled>Item</NavItemStyled>
+        <Link to={to} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <NavItemStyled>
+                {isExpanded ? label : label.charAt(0)}
+            </NavItemStyled>
+        </Link>
     )
 }
 

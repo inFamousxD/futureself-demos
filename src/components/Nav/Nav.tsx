@@ -8,11 +8,10 @@ const Nav = () => {
     return (
         <NavBar $isExpanded={isExpanded}>
             <NavControlStyled onClick={() => setIsExpanded(!isExpanded)}>
-                Cont
+                {isExpanded ? '◀' : '▶'}
             </NavControlStyled>
-            <NavItem />
-            <NavItem />
-            <NavItem />
+            <NavItem to="/" label="Dashboard" isExpanded={isExpanded} />
+            <NavItem to="/meditation" label="Meditation" isExpanded={isExpanded} />
         </NavBar>
     )
 }

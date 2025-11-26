@@ -3,16 +3,12 @@ import { defaultTheme } from "../../theme/theme";
 
 export const NavBar = styled.div<{ $isExpanded: boolean }>`
     min-width: 64px;
-    /* max-width: 256px; */
     height: 100vh;
 
-    width: ${props => props.$isExpanded ? 256 : 64}px;
+    width: ${props => props.$isExpanded ? 128 : 64}px;
 
-    flex: 1;
+    display: flex;
     flex-direction: column;
-    flex-grow: 1;
-
-    column-gap: 30px;
 
     overflow-x: hidden;
     overflow-y: auto;
@@ -23,21 +19,42 @@ export const NavBar = styled.div<{ $isExpanded: boolean }>`
 `;
 
 export const NavItemStyled = styled.div`
-    margin: auto;
-    padding: 10px;
+    padding: 15px 20px;
 
-    flex: 1;
-    flex-direction: row;
-    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    user-select: none;
+
+    color: white;
+    font-size: 14px;
+
+    transition: background-color 150ms ease-in-out;
+
+    &:hover {
+        background-color: ${defaultTheme.accent};
+    }
 `;
 
 export const NavControlStyled = styled.div`
-    margin: auto;
-    padding: 10px;
+    padding: 15px 20px;
 
-    flex: 1;
-    flex-direction: row;
-    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    cursor: pointer;
     user-select: none;
+
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: background-color 150ms ease-in-out;
+
+    &:hover {
+        background-color: ${defaultTheme.accent};
+    }
 `;
