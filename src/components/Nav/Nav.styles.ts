@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { defaultTheme } from "../../theme/theme";
 
 export const NavBar = styled.div<{ $isExpanded: boolean }>`
-    min-width: 64px;
+    min-width: 48px;
     height: 100vh;
 
-    width: ${props => props.$isExpanded ? 128 : 64}px;
+    width: ${props => props.$isExpanded ? 128 : 48}px;
 
     display: flex;
     flex-direction: column;
