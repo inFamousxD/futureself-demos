@@ -22,14 +22,14 @@ export interface GenerateAudioResponse {
 }
 
 const MOCK_SCRIPT = `
-    Welcome to your meditation practice. 
-    Take a moment to settle into a comfortable position. Close your eyes gently, or soften your gaze downward.
-    Begin by bringing your awareness to your breath. Notice the natural rhythm of your breathing - the inhale, the pause, the exhale.
-    As you breathe in, imagine drawing in calm and peace. As you breathe out, release any tension or stress you may be holding.
-    Your vision for yourself is powerful and within reach. You have already accomplished so much, and you continue to grow every day.
-    Allow yourself to feel proud of your journey. Acknowledge your strength, your resilience, your unique gifts.
-    Rest in this moment of peace and self-compassion. You are exactly where you need to be.
-    When you're ready, gently bring your awareness back to the present moment. Take a deep breath, and slowly open your eyes.
+Welcome to your meditation practice. 
+Take a moment to settle into a comfortable position. Close your eyes gently, or soften your gaze downward.
+Begin by bringing your awareness to your breath. Notice the natural rhythm of your breathing - the inhale, the pause, the exhale.
+As you breathe in, imagine drawing in calm and peace. As you breathe out, release any tension or stress you may be holding.
+Your vision for yourself is powerful and within reach. You have already accomplished so much, and you continue to grow every day.
+Allow yourself to feel proud of your journey. Acknowledge your strength, your resilience, your unique gifts.
+Rest in this moment of peace and self-compassion. You are exactly where you need to be.
+When you're ready, gently bring your awareness back to the present moment. Take a deep breath, and slowly open your eyes.
 `;
 
 const MOCK_AUDIO_URL = "https://abc.xyz/meditation-audio.mp3";
