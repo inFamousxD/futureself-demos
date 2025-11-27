@@ -22,3 +22,26 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.tfstate.lock.info
+
+# Terraform variables with sensitive data
+terraform/terraform.tfvars
+terraform/*.tfvars
+
+# AWS and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Docker
+.dockerignore
