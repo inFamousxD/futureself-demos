@@ -32,7 +32,7 @@ const Meditation = () => {
 
     const [script, setScript] = useState<string>("");
     const [audioUrl, setAudioUrl] = useState<string>("");
-    const [voiceId, setVoiceId] = useState<string>("id-here");
+    const [voiceId, setVoiceId] = useState<string>("ybHawyVJhBsEHkg0UBrC");
     
     const [isLoadingScript, setIsLoadingScript] = useState<boolean>(false);
     const [isLoadingAudio, setIsLoadingAudio] = useState<boolean>(false);
