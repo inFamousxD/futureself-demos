@@ -199,7 +199,9 @@ const Meditation = () => {
                                 Your browser does not support the audio element.
                             </audio>
                             <p style={{ marginTop: "10px", fontSize: "12px" }}>
-                                Audio URL: <a href={audioUrl} target="_blank" rel="noopener noreferrer">{audioUrl}</a>
+                                Audio URL: <a href={audioUrl} target="_blank" rel="noopener noreferrer">
+                                    {audioUrl.length > 100 ? `${audioUrl.substring(0, 100)}...` : audioUrl}
+                                </a>
                             </p>
                         </AudioContainer>
                     )}
