@@ -6,3 +6,9 @@ public_subnet_ids  = ["subnet-aaa", "subnet-bbb"]
 desired_count      = 1
 cpu                = "256"
 memory             = "512"
+
+# Get default VPC ID
+# aws ec2 describe-vpcs --filters "Name=isDefault,Values=true" --query "Vpcs[0].VpcId" --output text
+
+# Get public subnet IDs
+# aws ec2 describe-subnets --filters "Name=vpc-id,Values=YOUR_VPC_ID" --query "Subnets[*].SubnetId" --output text
